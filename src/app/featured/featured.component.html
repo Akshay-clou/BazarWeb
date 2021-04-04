@@ -1,0 +1,92 @@
+<div class="container">
+    <h4 class="text-uppercase pb-4 mx-2 float-left">Featured Categories</h4>
+    <div id="multi-item-example" class="carousel slide carousel-multi-item mt-5" data-interval="false" data-ride="carousel">
+        <!--Controls-->
+        <div class="controls-top float-right mb-5 mr-2">
+            <a class="btn-floating" href="#multi-item-example" data-slide="prev"><i class="fa fa-arrow-left "></i></a> &nbsp;
+            <a class="btn-floating" href="#multi-item-example" data-slide="next"><i
+        class="fa fa-arrow-right"></i></a>
+        </div>
+        <!--/.Controls-->
+
+
+
+        <!--Slides-->
+        <div class="carousel-inner" role="listbox">
+
+            <div class="carousel-inner" role="listbox">
+                <ng-container *ngFor="let item1 of featuredList;let i=index;">
+                    <div class="carousel-item" [ngClass]="{active:i==0}">
+                        <div class="row">
+                            <div class="col-md-2">
+                                <div class="card mb-2 bg-dark h-100 border-0 rounded-0 d-flex justify-content-center">
+
+                                    <!-- <img class="card-img-top"
+                     src={{item2.image}} alt="Card image cap"> -->
+                                    <button class="btn btn-sm btn-primary text-white border-0 rounded-0"> View All</button>
+
+                                </div>
+                            </div>
+                            <ng-container *ngFor="let item2 of item1">
+                                <div class="col-md-2">
+                                    <div class="card mb-2 h-100">
+                                        <img class="card-img-top" src={{item2.image}} alt="Card image cap" height="180">
+                                        <div class="card-body text-center">
+                                            <h6 class="card-title text-uppercase">{{item2.name}}</h6>
+                                            <hr>
+                                            <p class="card-text">{{item2.total_items}} &nbsp; Items</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </ng-container>
+                        </div>
+                    </div>
+                </ng-container>
+
+
+
+            </div>
+
+        </div>
+        <div class="row" style="margin-top: 100px;">
+            <div class="col-sm-8">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <h4 class="card-title text-uppercase"> Best Price this month</h4>
+                            </div>
+                            <div class="col-sm-6">
+                                <span><button class="btn btn-primary px-4 rounded-0 border-0">View All</button> </span>
+
+                            </div>
+                        </div>
+                    </div>
+                    <img class="card-img-top" src="../../assets/images/Rectangle 201.png" alt="Card image cap" height="230px">
+
+
+                </div>
+            </div>
+            <div class="col-md-2" style="float:left">
+                <div class="card mb-2 h-100">
+                    <img class="card-img-top" src="../../assets/images/Image6.png" alt="Card image cap">
+                    <div class="card-body text-center">
+                        <h6 class="card-title text-uppercase">School Bag</h6>
+                        <hr>
+                        <p class="card-text">25 &nbsp; Items</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-2" style="float:left">
+                <div class="card mb-2 h-100">
+                    <img class="card-img-top" src="../../assets/images/Image7.png" alt="Card image cap">
+                    <div class="card-body text-center">
+                        <h6 class="card-title text-uppercase">Travel Bag</h6>
+                        <hr>
+                        <p class="card-text">25 &nbsp; Items</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

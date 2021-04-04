@@ -1,0 +1,37 @@
+<!-- Header -->
+<app-header></app-header>
+<!-- Dynamic Banner -->
+<app-banner></app-banner>
+<!-- Featured category Dynamic -->
+<app-featured></app-featured>
+<!-- Product List Dynamic -->
+
+<app-product-list></app-product-list>
+<!-- Subscribe Section -->
+<div class="bg-light py-5 text-center" style="margin-top:100px">
+    <div class="container">
+      <form #f="ngForm" (ngSubmit)="subscribe(f.value)">
+        <h3 class="text-uppercase font-weight-bold">Subscribe discount for cell</h3>
+        <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magni temporibus saepe illum quam distinctio adipisci inve
+        </p>
+
+        <div class="input-group mb-3 p-5 w-50 mx-auto">
+            <input type="text" name="subscribe" class="form-control  rounded-0 bg-transparent" required ngModel placeholder="Enter your email address" aria-label="Recipient's username" aria-describedby="button-addon2" />
+            <div class="input-group-append">
+                <button type="submit"class="btn btn-primary text-uppercase px-4 px-4 border-0 rounded-0 ml-5" type="button" id="button-addon2">
+              Subscribe
+            </button>
+            </div>
+        </div>
+      </form>
+    </div>
+</div>
+<!-- Blog static -->
+<app-blog></app-blog>
+<!-- Brand Static -->
+
+<app-brand></app-brand>
+<!-- Footer -->
+
+<app-footer></app-footer>
